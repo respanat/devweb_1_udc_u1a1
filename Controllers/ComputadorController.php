@@ -73,26 +73,7 @@ class ComputadorController {
     
         require_once __DIR__ . '/../Views/forms/computadores/editar.php';
     }
-            
-    /*public function editarComputador($id, $datos) {
-        $resultado = $this->computadorService->actualizarComputador($id, $datos);
-    
-        if ($resultado) {
-            $_SESSION['mensaje_exito'] = "Computador actualizado exitosamente.";
-            header("Location: /act1_devweb/public/index.php?controller=usuario&action=administrar");
-            exit();
-        } else {
-            $_SESSION['mensaje_error'] = "Error al actualizar el computador.";
-            $usuarios = $this->usuarioService->obtenerTodosLosUsuarios();
-            $computador = $this->computadorService->buscarComputadorPorId($id);
-            require_once __DIR__ . '/../Views/forms/computadores/editar.php';
-        }
-    }
-    
-    public function editarComputador($id, $datos) {
-        return $this->computadorService->actualizarComputador($id, $datos);
-    }*/
-
+     
     public function eliminarComputador() {
         $id = $_GET['id'] ?? null;
     
